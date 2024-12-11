@@ -50,4 +50,4 @@ COPY root/ /
 EXPOSE 9696
 VOLUME /config
 
-#ENTRYPOINT ./app/prowlarr/bin/Prowlarr && bash
+ENTRYPOINT ./app/prowlarr/bin/Prowlarr && bash
