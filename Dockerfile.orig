@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM  mcr.microsoft.com/dotnet/sdk:9.0-alpine
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20
 
 # set version label
 ARG BUILD_DATE
@@ -19,8 +19,6 @@ RUN \
   echo "**** install packages ****" && \
   apk add -U --upgrade --no-cache \
     icu-libs \
-    jq \
-    curl \
     sqlite-libs \
     xmlstarlet && \
   echo "**** install prowlarr ****" && \
