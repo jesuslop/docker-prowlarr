@@ -49,3 +49,5 @@ COPY root/ /
 # ports and volumes
 EXPOSE 9696
 VOLUME /config
+
+ENTRYPOINT ./app/sonarr/bin/Prowlarr && bash
