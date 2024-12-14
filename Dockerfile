@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM  mcr.microsoft.com/dotnet/sdk:9.0-alpine
+FROM alpine:3.19
 
 # set version label
 ARG BUILD_DATE
