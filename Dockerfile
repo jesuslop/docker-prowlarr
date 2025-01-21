@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM alpine:3.19
+FROM alpine:3.21
 
 # set version label
 ARG BUILD_DATE
